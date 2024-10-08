@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public')); // 静的ファイル（HTMLなど）の提供用
 
+app.use(cors()); // CORSを有効にする
+
 // プロキシ用ルート
 app.get('/proxy', async (req, res) => {
     const url = req.query.url; // クライアントから渡されたURL
