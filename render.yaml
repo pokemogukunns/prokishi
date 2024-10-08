@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-node-app
+    name: proxy-to-pokemogukunn
     env: node
     buildCommand: "npm install"
     startCommand: "node server.js"
